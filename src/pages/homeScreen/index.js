@@ -20,7 +20,6 @@ import { Pagination, Autoplay } from "swiper";
 import "./styles.scss";
 import CollectionCard from "../../components/featureCollection/collectionCard";
 const HomeScreen = () => {
-  const [discount, setDiscount] = useState(false);
   return (
     <>
       <section className="home-wrapper-1 py-5">

@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
 // Styles
 import "./styles.scss";
 
 const CollectionCard = ({ featureCard }) => {
-  const [discount, setDiscount] = useState(false);
   return (
     <div className="feature-collection-card">
       <div className="product-img">
