@@ -1,0 +1,30 @@
+// variables
+@import "../../../styles/variables/colors";
+
+.feature-collection-card {
+  background-color: $white;
+  cursor: pointer;
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: $shadow-primary;
+
+  .card-details {
+    .change-color {
+      color: red;
+      span {
+        color: rgba(0, 0, 0, 0.4);
+        text-decoration: line-through;
+      }
+    }
+    h5 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .hide-discount {
+      display: none;
+    }
+  }
+}
