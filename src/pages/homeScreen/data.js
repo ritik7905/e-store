@@ -1,4 +1,6 @@
-import { banner, feature, icon, product } from "../../assets";
+// Moment
+import moment from "moment";
+import { banner, blogs, brand, feature, icon, product } from "../../assets";
 
 export const mainSlider = [
   {
@@ -193,5 +195,49 @@ export const featureCard = [
     amount: `${100.0}`,
     discount: true,
     discountAmount: `${750.0}`,
+  },
+];
+
+// Brand-Images
+
+export const brandNames = [
+  { img: brand.brand_3 },
+  { img: brand.brand_1 },
+  { img: brand.brand_4 },
+  { img: brand.brand_2 },
+  { img: brand.brand_3 },
+  { img: brand.brand_2 },
+  { img: brand.brand_3 },
+  { img: brand.brand_4 },
+];
+
+export const blogCard = [
+  {
+    img: blogs.blog_1,
+    date: moment().format("Do MMM, YYYY"),
+    title: "Sed Ut Perspiciatis Unde Omnis....",
+    desc: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without",
+    btnTag: "Read More",
+  },
+  {
+    img: blogs.blog_2,
+    date: moment().format("Do MMM, YYYY"),
+    title: "Sed Ut Perspiciatis Unde Omnis....",
+    desc: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without",
+    btnTag: "Read More",
+  },
+  {
+    img: blogs.blog_3,
+    date: moment().format("Do MMM, YYYY"),
+    title: "Sed Ut Perspiciatis Unde Omnis....",
+    desc: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without",
+    btnTag: "Read More",
+  },
+  {
+    img: blogs.blog_4,
+    date: moment().format("Do MMM, YYYY"),
+    title: "Sed Ut Perspiciatis Unde Omnis....",
+    desc: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without",
+    btnTag: "Read More",
   },
 ];

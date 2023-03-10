@@ -27,6 +27,19 @@ import feature_2 from "../assets/images/feature/camera.webp";
 import feature_3 from "../assets/images/feature/speaker.avif";
 import feature_4 from "../assets/images/feature/portable-speaker.webp";
 import feature_5 from "../assets/images/feature/smart-watch.avif";
+
+// Brand-Images
+
+import brand_1 from "../assets/images/brands/canon.png";
+import brand_2 from "../assets/images/brands/dell.png";
+import brand_3 from "../assets/images/brands/samsung.png";
+import brand_4 from "../assets/images/brands/apple-logo.png";
+
+// Blog-Images
+import blog_1 from "../assets/images/blogs/headphone.jpg";
+import blog_2 from "../assets/images/blogs/laptop.jpg";
+import blog_3 from "../assets/images/blogs/mobile.jpg";
+import blog_4 from "../assets/images/blogs/vr-set.jpeg";
 // Icons
 export const icon = { service_1, service_2, service_3, service_4, service_5 };
 
@@ -53,4 +66,21 @@ export const feature = {
   feature_3,
   feature_4,
   feature_5,
+};
+
+// Brands-images
+
+export const brand = {
+  brand_1,
+  brand_2,
+  brand_3,
+  brand_4,
+};
+
+// Blog-Images
+export const blogs = {
+  blog_1,
+  blog_2,
+  blog_3,
+  blog_4,
 };

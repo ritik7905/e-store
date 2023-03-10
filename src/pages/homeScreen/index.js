@@ -1,12 +1,16 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import ProductBanner from "../../components/productBanner";
+import BlogCard from "../../components/ourLatestNews/blogCard";
+import CollectionCard from "../../components/featureCollection/collectionCard";
 import {
+  brandNames,
   featureCard,
   mainSlider,
   ourProducts,
   OurServices,
   SubProducts,
+  blogCard,
 } from "./data";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,9 +20,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
 import { Pagination, Autoplay } from "swiper";
+import Marquee from "react-fast-marquee";
 // Styles
 import "./styles.scss";
-import CollectionCard from "../../components/featureCollection/collectionCard";
 const HomeScreen = () => {
   return (
     <>
@@ -165,6 +169,47 @@ const HomeScreen = () => {
                   </Swiper>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="marque-wrapper py-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <div className="marque-inner-wrapper card-wrapper">
+                <Marquee
+                  play={true}
+                  pauseOnHover={true}
+                  // pauseOnClick={true}
+                  direction={"right"}
+                >
+                  <div className="d-flex align-items-center w-100 gap-30">
+                    {brandNames?.map((curElm, i) => {
+                      return (
+                        <div className="brand-img" key={i}>
+                          <img
+                            src={curElm.img}
+                            alt="brand-img"
+                            className="img-fluid"
+                          />
+                        </div>
+                      );
+                    })}
+                  </div>
+                </Marquee>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="blog-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row g-3">
+            <div className="col-3">
+              <BlogCard blogCard={blogCard} />
             </div>
           </div>
         </div>
